@@ -1,113 +1,113 @@
-.wd-bg-color-black {
-    background-color: black;
- }
+* {
+    font-family: sans-serif;
+}
 
- .wd-tuitter {
-    margin-left: 16px;
-    margin-right: 16px;
+.wd-bookmarks-box {
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-bottom-style: solid;
+    border-color:rgb(110, 118, 125);
+    border-width: 1px;
+}
+
+.wd-bookmarks-title {
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+}
+
+.wd-user-handle {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-flex-box {
+    display: flex;
+}
+
+.wd-avatar {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+
+.wd-bookmark-content-box {
+    padding-left: 12px;
+    display: flex; 
+    flex-direction: column;
+    max-width: 505px;
+}
+
+.wd-bookmark-author {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.wd-bookmark-handle {
+    font-size: 15px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-bookmark-content {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: white;
+    font-size: 15px;
+    max-width: 506px;
+    padding-right: 16px;
+}
+
+.wd-bookmark-image {
+    margin-top: 12px;
+    width: 504px;
+    height: 264px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     border-style: solid;
     border-color: rgb(110, 118, 125);
     border-width: 1px;
- }
+}
 
- .wd-search-bar-div {
-  padding: 10px;
-  position: relative;
- }
+.wd-bookmark-description-box {
+    padding: 12px;
+    font-size: 15px;
+    border-style: solid;
+    border-color:rgb(110, 118, 125);
+    border-width: 1px; 
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-sizing: border-box;
+    max-width: 505px;
+}
 
- .wd-search-bar {
-   border-radius: 40px;
-   background-color: darkgrey;
-   color: white;
-   width: 90%;
-   height: 25px;
-   padding-left: 16px;
- }
+.wd-bookmark-title {
+    font-weight: bold;
+    color: white;
+    margin: 0 0 5px 0;
+}
 
- .wd-settings-icon {
-   color: rgb(29,161,242); 
-   position: absolute;
-   right: 12px;
-   top: 30%;
- }
+.wd-bookmark-description {
+    color:rgb(110, 118, 125);
+}
 
- .wd-grid-row {
-    /* clear: both; */
+.wd-bookmark-icon-box {
+    padding-top: 12px;
     display: flex;
-    padding-left: 10px;
 }
 
-.wd-pages {
-   font-family: sans-serif;
-   font-size: 15px;
-   color: rgb(110, 118, 125);
-   width: 16%;
-   text-align: center;
-   /* float: left; */
-   /* PADDING 16px?? */
- }
-
-.wd-for-you {
-  color: rgb(29,161,242);
-  border-bottom-width: 5px;
-  border-color: black;
-  border-bottom-color: rgb(29,161,242);
-  border-style: solid;
+.wd-bookmark-icon {
+    flex: 1;
+    text-decoration: none;
+    color: rgb(110, 118, 125);
 }
 
-.wd-separator {
-  background-color: darkgrey;
-  border-color: rgb(47, 51, 54);
-  border-style: solid;
-  height: 10px;
+.wd-bookmark-heart {
+    color: red
 }
 
-
-.wd-tuit-block {
-  border-bottom-style: solid;
-  border-bottom-color: rgb(110, 118, 125);
-  border-bottom-width: 1px;
-  position: relative;
-  clear: both;
-}
-
-.wd-tuit {
-  padding: 10px; 
-}
-
-.wd-topic {
-  font-family: sans-serif;
-  font-size: 13px; 
-  color: rgb(110, 118, 125);
-}
-
-.wd-title {
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  color: white;
-}
-
-.wd-author {
-  font-family: sans-serif;
-  font-size: 13px; 
-  font-weight: bold;
-  color: white;
-}
-
-.wd-tuit-with-image {
-  display: flex;
-}
-
-.wd-image-box {
-  flex: 1;
-  text-align: right;
-  padding-right: 6px;
-}
-
-.wd-tuit-image {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  flex-grow: auto;
+.wd-bookmark-icon-number {
+   padding-left: 12px;
 }

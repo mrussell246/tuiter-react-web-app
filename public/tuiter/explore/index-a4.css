@@ -1,0 +1,18 @@
+* {
+    font-family: sans-serif;
+}
+
+.wd-search-bar-icon-pos {
+    top: 10px;
+    left: 15px;
+}
+
+.wd-follow-icon-size {
+    max-width: 48px;
+    max-height: 48px;
+}
+
+.wd-for-you-icon-size {
+    max-width: 80px;
+    max-height: 80px;
+}

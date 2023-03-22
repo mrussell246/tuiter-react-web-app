@@ -14,8 +14,10 @@ function App() {
                  element={<Labs/>}/>
           <Route path="/hello"
                  element={<HelloWorld/>}/>
+          <Route path="/tuiter/explore"
+                 element={<Tuiter page='explore'/>}/>
           <Route path="/tuiter"
-                 element={<Tuiter/>}/>
+                 element={<Tuiter page='home'/>}/>
           <Route path="/a7"
                  element={<Assignment7/>}/>
           </Routes>

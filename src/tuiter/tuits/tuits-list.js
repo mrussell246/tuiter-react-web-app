@@ -9,7 +9,7 @@ const TuitsList = () =>  {
         {
         tuitsArray.map(tuit =>
             <TuitItem
-            key={tuit.id}
+            key={tuit._id}
             tuit={tuit}/>
         )
         }

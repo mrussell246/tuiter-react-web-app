@@ -1,15 +1,12 @@
 import React from "react";
-import { useState } from "react";
+import { useDispatch } from "react-redux";
+import { likeTuit } from "./tuits-reducer";
 
 const TuitStats = ({tuit}) => {
-    const [liked, setLiked] = useState(tuit.liked);
-    const [likes, setLikes] = useState(tuit.likes);
-
-    function likeTuit() {
-        setLiked(!liked);
-        liked && setLikes(likes - 1);
-        !liked && setLikes(likes + 1);
-    }
+    const dispatch = useDispatch();
+    const likeTuitHandler = ({id, liked}) => {
+            dispatch(likeTuit({id, liked}));
+        }
 
     return (
         <div className="row">
@@ -23,10 +20,10 @@ const TuitStats = ({tuit}) => {
                 <span> {tuit.retuits}</span>
             </div>
 
-            <div className="col-3" onClick={likeTuit}>
-                {!liked && <i class="bi bi-heart"></i>}
-                {liked && <i class="bi bi-heart-fill text-danger"></i>}
-                <span> {likes}</span>
+            <div className="col-3">
+                {!tuit.liked && <i class="bi bi-heart" onClick={() => likeTuitHandler({id: tuit._id, liked: true})}></i>}
+                {tuit.liked && <i class="bi bi-heart-fill text-danger" onClick={() => likeTuitHandler({id: tuit._id, liked: false})}></i>}
+                <span> {tuit.likes}</span>
             </div>
 
             <div className="col-3">
